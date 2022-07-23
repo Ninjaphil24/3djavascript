@@ -48,11 +48,11 @@ function addStar() {
 }
 
 Array(200).fill().forEach(addStar)
-const spaceTexture = new THREE.TextureLoader().load('public/space.jpg')
+const spaceTexture = new THREE.TextureLoader().load('./public/space.jpg')
 scene.background = spaceTexture
 
 // Avatar
-const philTexture = new THREE.TextureLoader().load('public/phil.JPG')
+const philTexture = new THREE.TextureLoader().load('./public/phil.JPG')
 
 const phil = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -63,8 +63,8 @@ scene.add(phil)
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('public/moon.jpg')
-const normalTexture = new THREE.TextureLoader().load('public/normaljpg')
+const moonTexture = new THREE.TextureLoader().load('./public/moon.jpg')
+const normalTexture = new THREE.TextureLoader().load('./public/normaljpg')
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
